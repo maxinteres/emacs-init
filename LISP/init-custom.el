@@ -9,7 +9,8 @@
  '(custom-enabled-themes '(modus-operandi-tinted))
  '(global-display-line-numbers-mode t)
  '(package-selected-packages
-   '(company consult embark icomplete-vertical marginalia quickrun slime))
+   '(SLIME company consult embark icomplete-vertical marginalia quickrun
+	   sbcl slime))
  '(tool-bar-mode nil))
 
 (custom-set-faces

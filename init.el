@@ -23,6 +23,9 @@
 (use-package init-company :ensure nil)
 ;;快捷键
 (use-package init-keybindings :ensure nil)
+;;cl
+(use-package init-cl :ensure nil)
+;;
 
 (cd "~/")
 
