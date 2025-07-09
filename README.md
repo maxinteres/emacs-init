@@ -1,1 +1,1 @@
-配置commonlisp需要下载sbcl
+閰嶈澋瀹畂mmonlisp闇�闁瑏閵潒闋х法bcl
