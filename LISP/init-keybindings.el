@@ -1,11 +1,3 @@
-;; 快速打开配置文件
-(defun open-init-file()
-  (interactive)                     ;加了这一行才可以被调用
-  (find-file "~/.emacs.d/init.el"))
-(defun switch-to-scratch ()
-  (interactive)
-  (switch-to-buffer "*scratch*"))
-;; 这一行代码，将函数 open-init-file 绑定到 <f2> 键上
 (global-set-key (kbd "<f2>") 'open-init-file)
 (global-set-key (kbd "C-h C-f") 'find-function)
 (global-set-key (kbd "C-h C-v") 'find-variable)
@@ -13,5 +5,7 @@
 (global-set-key (kbd "C-`") 'switch-to-scratch)
 (global-set-key (kbd "C-;") 'embark-act)
 (global-set-key (kbd "<f10>") 'quickrun)
-(global-set-key (kbd "TAB") 'icomplete-force-complete)
+(global-set-key (kbd "C-c C-r") 'replace-string)
+(global-set-key (kbd "C-c p f") 'project-find-file)
+
 (provide 'init-keybindings)

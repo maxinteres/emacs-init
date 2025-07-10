@@ -9,8 +9,8 @@
  '(custom-enabled-themes '(modus-operandi-tinted))
  '(global-display-line-numbers-mode t)
  '(package-selected-packages
-   '(SLIME company consult embark icomplete-vertical marginalia quickrun
-	   sbcl slime))
+   '(SLIME company consult elpy embark icomplete-vertical marginalia
+	   quickrun sbcl slime))
  '(tool-bar-mode nil))
 
 (custom-set-faces
@@ -19,11 +19,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(setq inhibit-startup-screen t)
-(setq-default cursor-type 'bar)
-(setq tab-always-indent 'complete)
-;;鼠标滚动
-(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
-(setq mouse-wheel-progressive-speed nil)
 
 (provide 'init-custom)
