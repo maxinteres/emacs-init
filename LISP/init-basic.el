@@ -5,4 +5,5 @@
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
 (electric-pair-mode t)
+(setq ring-bell-function 'ignore)
 (provide 'init-basic)
