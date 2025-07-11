@@ -16,6 +16,8 @@
 (require 'init-funcs) 
 ;;快捷键
 (require 'init-keybindings)
+;;org
+(require 'init-org)
 
 
 (cd "D:/") 

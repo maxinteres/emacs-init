@@ -4,7 +4,6 @@
 (global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "C-`") 'switch-to-scratch)
 (global-set-key (kbd "C-;") 'embark-act)
-(global-set-key (kbd "<f10>") 'quickrun)
 (global-set-key (kbd "C-c C-r") 'replace-string)
 (global-set-key (kbd "C-c p f") 'project-find-file)
 

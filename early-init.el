@@ -1,7 +1,5 @@
 ;; -*- lexical-binding: t -*-
-(setq gc-cons-threshold most-positive-fixnum
-      gc-cons-percentage 0.6
-      normal-gc-cons-threshold (* 20 1024 1024))
+(setq gc-cons-threshold most-positive-fixnum)
 
 ;;让鼠标滚动更好用
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
