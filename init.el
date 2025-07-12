@@ -19,7 +19,6 @@
 ;;org
 (require 'init-org)
 
-
 (cd "D:/") 
 (find-file "todo.org")
 

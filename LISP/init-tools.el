@@ -1,6 +1,6 @@
 ;;c/c++
 (use-package eglot
-  :ensure nil 
+  :ensure nil
   :hook               ; 自动挂钩到特定模式
   ((c-mode . eglot-ensure)
    (c++-mode . eglot-ensure))

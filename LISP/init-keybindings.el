@@ -6,5 +6,7 @@
 (global-set-key (kbd "C-;") 'embark-act)
 (global-set-key (kbd "C-c C-r") 'replace-string)
 (global-set-key (kbd "C-c p f") 'project-find-file)
-
+(with-eval-after-load 'hideshow
+  (define-key hs-minor-mode-map (kbd "C-<tab>") 'fold-switch))
+(provide 'init-keybindings)
 (provide 'init-keybindings)

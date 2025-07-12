@@ -7,5 +7,5 @@
 (electric-pair-mode t)
 (setq ring-bell-function 'ignore)
 (icomplete-vertical-mode t);minibuffer提示
-
+(add-hook 'prog-mode-hook 'hs-minor-mode)  ; 对所有编程模式启用
 (provide 'init-basic)

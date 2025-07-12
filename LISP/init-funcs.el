@@ -5,5 +5,10 @@
 (defun switch-to-scratch ()
   (interactive)
   (switch-to-buffer "*scratch*"))
+(defun fold-switch ()
+  (interactive)
+  (if (hs-already-hidden-p)
+      (hs-show-block)
+    (hs-hide-block)))
 
 (provide 'init-funcs)
