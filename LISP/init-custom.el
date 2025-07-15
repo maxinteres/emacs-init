@@ -7,6 +7,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(modus-operandi-tinted))
  '(global-display-line-numbers-mode t)
+ '(org-todo-keyword-faces '(("BUG" . "DeepYellow") ("WAIT" . "brown")))
  '(package-selected-packages '(SLIME company consult elpy embark marginalia sbcl slime))
  '(send-mail-function 'mailclient-send-it)
  '(tool-bar-mode nil))
