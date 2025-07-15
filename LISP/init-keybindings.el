@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t -*-
 (global-set-key (kbd "<f2>") 'open-init-file)
 (global-set-key (kbd "C-h C-f") 'find-function)
 (global-set-key (kbd "C-h C-v") 'find-variable)

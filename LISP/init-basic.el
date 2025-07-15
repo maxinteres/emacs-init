@@ -1,3 +1,6 @@
+;; -*- lexical-binding: t -*-
+(setq inhibit-startup-message t)  ; 禁用启动消息
+(setq initial-scratch-message nil) ; 清空*scratch*缓冲区初始内容
 (setq inhibit-startup-screen t)
 (setq-default cursor-type 'bar)
 (setq tab-always-indent 'complete)

@@ -1,4 +1,8 @@
 ;; -*- lexical-binding: t -*-
+(set-charset-priority 'unicode)
+(prefer-coding-system 'utf-8)
+(setq system-time-locale "C");编码设置
+
 (setq gc-cons-threshold most-positive-fixnum)
 
 ;;让鼠标滚动更好用

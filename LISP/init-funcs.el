@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t -*-
 ;; 快速打开配置文件
 (defun open-init-file()
   (interactive)                     ;加了这一行才可以被调用

@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t -*-
 ;;界面设置
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -6,7 +7,8 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(modus-operandi-tinted))
  '(global-display-line-numbers-mode t)
- '(package-selected-packages '(SLIME company consult embark marginalia sbcl slime))
+ '(package-selected-packages '(SLIME company consult elpy embark marginalia sbcl slime))
+ '(send-mail-function 'mailclient-send-it)
  '(tool-bar-mode nil))
 
 (custom-set-faces

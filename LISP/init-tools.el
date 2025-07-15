@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t -*-
 ;;c/c++
 (use-package eglot
   :ensure nil
