@@ -1,0 +1,18 @@
+1. 数据预处理 
+2. 模型训练
+3. 模型评估
+
+
+[[https://github.com/ThilinaRajapakse/BERT_binary_text_classification]]
+[[https://github.com/Tencent/NeuralNLP-NeuralClassifier]]
+[[https://www.zhihu.com/question/19929473/answer/90201148]]
+[[https://github.com/huggingface/transformers/tree/main/examples/pytorch/text-classification][huggingface官方示例]]
+
+
+torch：
+核心对象：
+tensor视作多维数组，不像矩阵，相乘是对应元素分别乘
+一阶tensor是向量，二阶tensor是矩阵
+
+
+关注项目时，注意识别前向传播和反向传播的部分

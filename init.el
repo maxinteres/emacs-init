@@ -19,7 +19,8 @@
 ;;org
 (require 'init-org)
 
-(cd "D:/") 
-(find-file "todo.org")
+
+(cd "~/.emacs.d/") 
+(find-file "todo/todo.org")
 
 

@@ -1,0 +1,42 @@
+* TODO 学习emacs
+** TODO 21天学会Emacs 第4-5天
+*** TODO 配置embark-consult
+** DONE 21天学会Emacs 第7天
+** TODO https://abochannek.github.io/emacs/2022/11/30/emacs-backup.html
+
+
+* TODO 尝试配置c/c++
+** DONE 完成运行
+** TODO 快速编译
+** TODO 文件链接
+
+
+* TODO 尝试配置elpy
+
+
+* TODO 学习logging
+
+
+* TODO 学习docker使用
+ - 注意：已经动过docker-engine中的"registry-mirrors"，不确定是否有效
+
+   
+* TODO 复习模电
+
+
+* TODO [[file:d:/proj/生信/c++/][生信项目]]
+** FAILED 试用mosek
+** TODO 改写代码，分别输出图中包含的所有环
+** TRY 引入去冗余软件cd-hit去除冗余序列
+
+
+* TODO 写一函数，对于输入的句子判断需不需要上下文补全
+** TRY 尝试使用模型训练的方法解决这个二分类任务
+*** DONE [[file:src.org::1][了解模型训练的一般步骤]]
+*** DONE [[file:src.org::6][去github找一些开源项目看看]]
+*** TODO pytorch,sklearn库了解
+*** TODO 了解模型的选型
+
+
+
+** TODO 尝试使用文档中策略进行训练
