@@ -1,4 +1,5 @@
 ;; -*- lexical-binding: t -*-
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
 (require 'org-tempo)
 (setq org-startup-folded 'fold)
 (setq org-todo-keywords '(
