@@ -1,0 +1,102 @@
+* built ins
+ 这里是python自带的功能
+** getattr函数
+ +用于动态地创建一个对象(这个描述不完整)+
+ getattr(object,name)相当于object.name，具体要看object是什么，创建类的情况如下
+#+begin_src python
+   app_class = getattr(app_module, app_class_name) #app_class_name是一个字符串 app_module是module类型，类似numpy
+   #等价于:app_class=app_module.app_class_name
+   #这一步没有获取到对象，只获取到了类，之后还要创建对象
+
+   array_func = getattr(np, "array")  # 等效于 np.array
+   data = array_func([1, 2, 3])  
+#+end_src
+
+** 基类
+ 使用继承的方法:
+#+begin_src python
+   class subclass(base_class):
+#+end_src
+ 可以通过super().method()调用基类的方法，特别是super()._init_()
+** 装饰器
+ 一个作用于单个函数的函数，可以简单地改变这个函数的行为
+ 装饰器的例子：
+#+begin_src python
+   def decorator_function(original_function):
+       def wrapper(*args, **kwargs):
+           # 这里是在调用原始函数前添加的新功能
+           before_call_code()
+           
+           result = original_function(*args, **kwargs)
+          
+           # 这里是在调用原始函数后添加的新功能
+           after_call_code()
+           
+           return result
+       return wrapper
+      
+   # 使用装饰器
+   @decorator_function
+   def fun(arg1, arg2):
+       pass  # 原始函数的实现
+   #之后使用fun=decorator_function(fun)，相当于装饰器作用于fun后产生的函数
+#+end_src
+ abc库中的例子：
+#+begin_src python
+   def abstractmethod(funcobj):
+    """A decorator indicating abstract methods.
+
+    Requires that the metaclass is ABCMeta or derived from it.  A
+    class that has a metaclass derived from ABCMeta cannot be
+    instantiated unless all of its abstract methods are overridden.
+    The abstract methods can be called using any of the normal
+    'super' call mechanisms.  abstractmethod() may be used to declare
+    abstract methods for properties and descriptors.
+
+    Usage:
+
+        class C(metaclass=ABCMeta):
+            @abstractmethod
+            def my_abstract_method(self, arg1, arg2, argN):
+                ...
+    """
+    funcobj.__isabstractmethod__ = True
+    return funcobj
+   #这种方法的缺陷在于，不方便改变函数行为，但易于打标记
+#+end_src
+* abc
+ 抽象基类库(abstract base class)，所有抽象基类都建议通过继承abc.ABC来定义
+* pydantic
+ 主要作用是验证数据的类型，对json等类型进行解析
+ 其中包含一个基类BaseModel，继承后的子类具有便利的初始化方式和验证输入数据类型的效果
+ e.g.
+#+begin_src python
+   class User(BaseModel):
+    id: int
+    name: str = "John Doe"
+    is_active: bool = True
+#+end_src
+* argparse
+ 提供了一种结构化解析命令行参数的功能
+#+begin_src python
+   import argparse
+
+   parser = argparse.ArgumentParser(description="Run a specific application service.")
+   parser.add_argument("--app", type=str, help="Name of the application to run (e.g., 'patient', 'doctor', 'mock').")
+   args = parser.parse_args()
+
+   app_name = args.app
+#+end_src
+* os
+ open shell,该包中是很多函数，相当于shell中命令行
+* importlib
+ 在运行时动态导入库，根据条件可以加载不同的模块
+#+begin_src python
+   import importlib
+   ...
+   module_path = f"app.{app_module_base_name}.{app_module_base_name}"
+   app_module = importlib.import_module(module_path)
+   #完成这一步后，app_module就和numpy、pandas一样，可以通过app_module.fun()调用其中的内容
+   ...
+#+end_src
+

@@ -10,4 +10,19 @@
 			       ("FAILED" . "chocolate")
 			       ("SUS" . "CHOColate")))
 
+(defun insert-src ()
+  "Insert org-mode source block and prepare for editing."
+  (interactive)
+  (org-insert-structure-template "src")
+  (next-line)
+  (indent-for-tab-command)
+  (previous-line))
+(defun insert-src ()
+  "Insert org-mode source block and prepare for editing."
+  (interactive)
+  (org-insert-structure-template "src")
+  (when (looking-at "#+BEGIN_SRC");looking-at:当前行以"..."开头？
+    (end-of-line)
+    (insert " ")))
+    
 (provide 'init-org)

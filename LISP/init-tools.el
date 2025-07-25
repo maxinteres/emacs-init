@@ -17,11 +17,14 @@
   :init
   (global-company-mode t)
   :config
-  (setq company-minimum-prefix-length 2)
+  (setq company-minimum-prefix-length 3)
   (setq company-idle-delay 0))
 
 (use-package marginalia
   :hook (after-init . marginalia-mode));C-h v/f时，显示各个变量/函数的详细信息
+
+;;scheme
+
 
 (provide 'init-tools)
 
