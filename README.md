@@ -1,3 +1,3 @@
-* requirements *
-** sbcl配置 **
-** g++配置 **
+# requirements 
+## sbcl配置 
+## g++配置 
