@@ -16,6 +16,7 @@
 (use-package company
   :init
   (global-company-mode t)
+  (setq company-global-modes '(not org-mode)) 
   :config
   (setq company-minimum-prefix-length 3)
   (setq company-idle-delay 0))
