@@ -1,0 +1,37 @@
+* project.el
+ 项目控制，当 Emacs 打开文件时，会从当前目录向上递归查找这些目录(.git等)，第一个遇到的版本控制目录的父目录 被视为项目根目录。
+ 主要设置：
+ #+begin_src elisp
+   (add-to-list 'project-vc-extra-root-markers ".project")
+   ;;寻找除一般vc之外的文件，将包含这种文件的文件夹视为当前项目的根目录
+ #+end_src
+ 命令及用途
+ project-switch-project (C-x p p)打开一个项目，会询问你要做的第一个操作
+ project-find-regexp (C-x p g)查找项目文件中符合正则表达式的内容
+ project-compile (C-x p c)配合makefile使用
+ project-list-buffer (C-x p C-b)显示当前项目中打开的buffer
+* regexp
+ 这里是emacs中正则表达式的语法：
+
+1. 没有特殊字符的情况和正常字符串完全相同 e.g. "make" 只匹配 "make"
+2. 特殊字符包含 . * + ? [ ] ^ $ \ *注：在lisp中使用\时必须写成\\*
+   
+  ".":匹配除换行符之外的单个字符
+      e.g. "a.c"匹配"abc"
+      
+  "*":前缀表达式可以自然数次出现
+      e.g. "ca*b"匹配"cb","cab","caab"
+  
+  "+":前缀表达式至少出现一次
+      e.g."cb"不被匹配
+  
+  "?":前缀表达式至多出现一次
+      e.g."caab"不被匹配
+      
+  "\{N\}":前缀表达式正好出现N次
+      e.g. "x\{4\}"匹配"xxxx"
+
+  "\(...\)":将括号内的字符视为一个整体，和其他特殊字符配合使用
+      e.g."ba\(na\)*"匹配"banana"
+
+  

@@ -5,6 +5,16 @@
 ** DONE https://abochannek.github.io/emacs/2022/11/30/emacs-backup.html
 
 
+* TODO cs61A B C
+
+
+* TODO  配置lsp-java
+** DONE 下载JDK
+** TODO [[https://github.com/emacs-lsp/lsp-mode][看lsp的readme]]
+
+* TODO [[https://zhuanlan.zhihu.com/p/612921777?share_code=jYMIXiiJ2sfK&utm_psn=1933296217531605750][c++项目]]
+
+
 * SUS 学习logging
 
 
@@ -33,5 +43,9 @@
 从08
 
 
-* TODO 处理Pinocchia
+* TODO 使用大模型的方法进行咨询上下文的补全
+DASHSCOPE_API_KEY=sk-6423f724e06d488ca246f2425f6707f4;DASHSCOPE_MODEL=qwen-plus
 
+
+* 本周日志：
+实现判断是否需要补全和进行上下文补全的api接口，

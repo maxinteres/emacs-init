@@ -1,0 +1,22 @@
+* makefile
+一种快速编译的方法（如果每次编译要使用的指令都一样，如：g++ main.cpp edg_def.cpp fun_def.cpp -o main.exe），把使用的指令统一写进项目根目录里的makefile文件中（没有后缀）
+基本使用:
+#+begin_src makefile
+  main.exe:main.cpp fun_def.cpp edg_def.cpp
+      g++ main.cpp fun_def.cpp edg_def.cpp -o main.exe
+#+end_src
+然后通过 =make -k= 指令就能直接运行
+格式：
+#+begin_src
+  目标文件(输出文件):依赖文件
+  (<tab>) 指令
+#+end_src
+没有目标文件的情况需要其他语法协助
+* git
+版本控制软件
+基本使用：
+回退到上次提交
+#+begin_src git
+  git restore 
+#+end_src
+
