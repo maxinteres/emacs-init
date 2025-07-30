@@ -27,5 +27,17 @@
 ;;scheme
 
 
+;;elpy
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable))
+(setq max-specpdl-size 5000)  ; 默认是 1000，增加限制
+
+;;C-c C-c (elpy-shell-send-region-or-buffer) 当前脚本运行
+;;C-RET (elpy-shell-send-statement-and-step) 执行当前行
+;;C-c C-z (elpy-shell-switch-to-shell) 在shell和脚本切换
+;;M-x run-python可以直接打开python repl
+
 (provide 'init-tools)
 

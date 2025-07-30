@@ -99,4 +99,19 @@
    #完成这一步后，app_module就和numpy、pandas一样，可以通过app_module.fun()调用其中的内容
    ...
 #+end_src
+* flask
+#+begin_src python
+    from flask import Flask, request, jsonify
 
+    app = Flask(__name__)
+
+    @app.route('/', methods=['POST'])#api的默认url在http://127.0.0.1:5000
+    def greet():
+        data = request.get_json()
+        name=data.get("name")
+        return jsonify({"greeting":"hello "+name})
+
+    if __name__ == '__main__':
+      app.run(debug=True)
+#+end_src
+* torch

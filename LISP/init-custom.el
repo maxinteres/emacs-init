@@ -11,8 +11,8 @@
  '(make-backup-files nil)
  '(org-todo-keyword-faces '(("BUG" . "DeepYellow") ("WAIT" . "brown")))
  '(package-selected-packages
-   '(company consult embark highlight-indentation ht marginalia pyvenv s
-	     slime yasnippet))
+   '(company consult elpy embark highlight-indentation ht marginalia
+	     python-mode pyvenv s slime yasnippet))
  '(tool-bar-mode nil))
 
 (custom-set-faces

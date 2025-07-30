@@ -6,22 +6,21 @@
 
 
 * TODO cs61A B C
+** [[https://elpy.readthedocs.io/en/latest/ide.html][elpy手册]]
 
 
 * TODO  配置lsp-java
 ** DONE 下载JDK
 ** TODO [[https://github.com/emacs-lsp/lsp-mode][看lsp的readme]]
 
+
 * TODO [[https://zhuanlan.zhihu.com/p/612921777?share_code=jYMIXiiJ2sfK&utm_psn=1933296217531605750][c++项目]]
-
-
-* SUS 学习logging
 
 
 * SUS 复习模电
 
 
-* TODO [[file:d:/proj/生信/c++/][生信项目]]
+* WAIT [[file:d:/proj/生信/c++/][生信项目]]
 ** FAILED 试用mosek
 ** DONE 改写代码，分别输出图中包含的所有环
 *** DONE [[file:d:/proj/生信/c++/fun_def.cpp::110][做好三大函数的注释]](output_ind_str;find_ring;dfs)
