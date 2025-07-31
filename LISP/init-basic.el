@@ -1,4 +1,7 @@
 ;; -*- lexical-binding: t -*-
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "gainsboro");;所在行高亮
+
 (setq inhibit-startup-message t)  ; 禁用启动消息
 
 (setq initial-scratch-message nil) ; 清空*scratch*缓冲区初始内容
