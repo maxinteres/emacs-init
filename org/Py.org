@@ -66,16 +66,6 @@
 #+end_src
 * abc
  抽象基类库(abstract base class)，所有抽象基类都建议通过继承abc.ABC来定义
-* pydantic
- 主要作用是验证数据的类型，对json等类型进行解析
- 其中包含一个基类BaseModel，继承后的子类具有便利的初始化方式和验证输入数据类型的效果
- e.g.
-#+begin_src python
-   class User(BaseModel):
-    id: int
-    name: str = "John Doe"
-    is_active: bool = True
-#+end_src
 * argparse
  提供了一种结构化解析命令行参数的功能
 #+begin_src python
@@ -86,18 +76,6 @@
    args = parser.parse_args()
 
    app_name = args.app
-#+end_src
-* os
- open shell,该包中是很多函数，相当于shell中命令行
-* importlib
- 在运行时动态导入库，根据条件可以加载不同的模块
-#+begin_src python
-   import importlib
-   ...
-   module_path = f"app.{app_module_base_name}.{app_module_base_name}"
-   app_module = importlib.import_module(module_path)
-   #完成这一步后，app_module就和numpy、pandas一样，可以通过app_module.fun()调用其中的内容
-   ...
 #+end_src
 * flask
 #+begin_src python
@@ -113,5 +91,29 @@
 
     if __name__ == '__main__':
       app.run(debug=True)
+#+end_src
+* fastapi(无样例)
+ 更加严谨的flask
+* importlib
+ 在运行时动态导入库，根据条件可以加载不同的模块
+#+begin_src python
+   import importlib
+   ...
+   module_path = f"app.{app_module_base_name}.{app_module_base_name}"
+   app_module = importlib.import_module(module_path)
+   #完成这一步后，app_module就和numpy、pandas一样，可以通过app_module.fun()调用其中的内容
+   ...
+#+end_src
+* os
+ open shell,该包中是很多函数，相当于shell中命令行
+* pydantic
+ 主要作用是验证数据的类型，对json等类型进行解析
+ 其中包含一个基类BaseModel，继承后的子类具有便利的初始化方式和验证输入数据类型的效果
+ e.g.
+#+begin_src python
+   class User(BaseModel):
+    id: int
+    name: str = "John Doe"
+    is_active: bool = True
 #+end_src
 * torch

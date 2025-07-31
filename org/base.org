@@ -19,4 +19,8 @@
 #+begin_src git
   git restore 
 #+end_src
+将所有修改的文件加入暂存
+#+begin_src git
+  git add -u
+#+end_src
 
