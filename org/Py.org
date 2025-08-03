@@ -64,6 +64,7 @@
     return funcobj
    #这种方法的缺陷在于，不方便改变函数行为，但易于打标记
 #+end_src
+** async def/await(没写)
 * abc
  抽象基类库(abstract base class)，所有抽象基类都建议通过继承abc.ABC来定义
 * argparse

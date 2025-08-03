@@ -6,7 +6,10 @@
 
 
 * TODO cs61A B C
-** [[https://elpy.readthedocs.io/en/latest/ide.html][elpy手册]]
+[[https://elpy.readthedocs.io/en/latest/ide.html][elpy手册]]
+** TODO 完成hog.py
+阶段一完成
+
 
 
 * TODO 配置lsp-java
@@ -42,6 +45,6 @@
 从08
 
 
+* TODO 看懂agent
 
 * 本周日志：
-整合“”判断是否需要补全”的api接口和“进行上下文补全”的api接口；实现通过大模型api进行上下文整合的接口

@@ -7,6 +7,7 @@
 (global-set-key (kbd "C-;") 'embark-act)
 (global-set-key (kbd "C-c C-r") 'replace-string)
 (global-set-key (kbd "C-c z") 'shell)
+(global-set-key (kbd "C-c i e") 'insert-empty)
 (with-eval-after-load 'hideshow
   (define-key hs-minor-mode-map (kbd "C-<tab>") 'fold-switch))
 
