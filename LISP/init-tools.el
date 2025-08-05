@@ -1,5 +1,6 @@
 ;; -*- lexical-binding: t -*-
 ;;c/c++
+;;c/c++
 (use-package eglot
   :ensure nil
   :hook               ; 自动挂钩到特定模式
@@ -23,10 +24,6 @@
 
 (use-package marginalia
   :hook (after-init . marginalia-mode));C-h v/f时，显示各个变量/函数的详细信息
-
-;;scheme
-
-
 ;;elpy
 (use-package elpy
   :ensure t
@@ -38,6 +35,7 @@
 ;;C-RET (elpy-shell-send-statement-and-step) 执行当前行
 ;;C-c C-z (elpy-shell-switch-to-shell) 在shell和脚本切换
 ;;M-x run-python可以直接打开python repl
+
 
 (provide 'init-tools)
 

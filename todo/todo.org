@@ -1,20 +1,20 @@
-* TODO 学习emacs
+* SUS 学习emacs
 ** TODO 21天学会Emacs 第4-5天
 *** TODO 配置embark-consult
 ** DONE 21天学会Emacs 第7天
 ** DONE https://abochannek.github.io/emacs/2022/11/30/emacs-backup.html
 
 
-* TODO cs61A B C
-[[https://elpy.readthedocs.io/en/latest/ide.html][elpy手册]]
+* TODO 为自己定义的函数写文档
+
+
+* TODO cs61A B C cs70 cs162(操作系统)
 ** TODO 完成hog.py
 阶段一完成
+** TODO 完成cat项目
 
 
-
-* TODO 配置lsp-java
-** DONE 下载JDK
-** TODO [[https://github.com/emacs-lsp/lsp-mode][看lsp的readme]]
+* TODO cs143(编译原理)
 
 
 * TODO [[https://zhuanlan.zhihu.com/p/612921777?share_code=jYMIXiiJ2sfK&utm_psn=1933296217531605750][c++项目]]
@@ -45,6 +45,6 @@
 从08
 
 
-* TODO 看懂agent
+* WAIT 看懂agent
 
 * 本周日志：

@@ -9,15 +9,16 @@
   (switch-to-buffer "*scratch*"))
 
 (defun fold-switch ()
+  "In hs-mode if present block is hidden show it ;if it is shown do the opposite"
   (interactive)
   (if (hs-already-hidden-p)
       (hs-show-block)
     (hs-hide-block)))
 
-(defun insert-empty (&optional times)
-  (interactive)
-  (let ((count (if (numberp times) times 10)))
-    (cl-dotimes (- count)
-      (newline))))
+(defun insert-empty (times)
+  "Insert 10 empty lines in default condition."
+  (interactive (list (read-number "number of empty lines:" 10)))
+  (cl-dotimes (- times)
+    (newline)))
 
 (provide 'init-funcs)
