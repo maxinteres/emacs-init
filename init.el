@@ -19,8 +19,9 @@
 ;;org
 (require 'init-org)
 
-
-(cd "~/.emacs.d/") 
-(find-file "todo/todo.org")
-
-
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (run-with-timer 3 nil (lambda ()
+				    (cd "~/.emacs.d/") 
+				    (find-file "todo/todo.org")))));;开机延迟启动
+                                  
