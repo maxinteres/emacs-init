@@ -1,3 +1,4 @@
+
 ;; -*- lexical-binding: t -*-
 ;;c/c++
 ;;c/c++
@@ -36,6 +37,8 @@
 ;;C-c C-z (elpy-shell-switch-to-shell) 在shell和脚本切换
 ;;M-x run-python可以直接打开python repl
 
+;;markdown
+(setq markdown-command "D:/home/pandoc-3.7.0.2/pandoc.exe")
 
 (provide 'init-tools)
 

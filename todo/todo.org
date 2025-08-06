@@ -5,16 +5,10 @@
 ** DONE https://abochannek.github.io/emacs/2022/11/30/emacs-backup.html
 
 
-* TODO 为自己定义的函数写文档
-
-
 * TODO cs61A B C cs70 cs162(操作系统)
 ** TODO 完成hog.py
 阶段一完成
 ** TODO 完成cat项目
-
-
-* TODO cs143(编译原理)
 
 
 * TODO [[https://zhuanlan.zhihu.com/p/612921777?share_code=jYMIXiiJ2sfK&utm_psn=1933296217531605750][c++项目]]
