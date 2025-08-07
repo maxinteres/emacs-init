@@ -1,8 +1,7 @@
 * TODO 学习emacs
-** TODO 配置consult
 ** TODO 学习el中的宏，并优化配置
 ** TODO 21天学会Emacs 第4-5天
-** TODO 配置embark-consult
+
 
 
 * TODO cs61A B C cs70 cs162(操作系统)
@@ -10,6 +9,7 @@
 阶段一完成
 ** TODO 完成cat项目
 
+* TODO 写完lecture18&19
 
 * WAIT [[https://zhuanlan.zhihu.com/p/612921777?share_code=jYMIXiiJ2sfK&utm_psn=1933296217531605750][c++项目]]
 

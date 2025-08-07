@@ -5,9 +5,11 @@
   :ensure nil
   :hook               ; 自动挂钩到特定模式
   ((c-mode . eglot-ensure)
-   (c++-mode . eglot-ensure))
+   (c++-mode . eglot-ensure)
+   (python-mode . eglot-ensure))
   :config             ; 包加载后的配置
-  (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd")))
+  (add-to-list 'eglot-server-programs
+	       '((c++-mode c-mode) "clangd")))
 
 ;;cl
 (use-package slime
@@ -15,8 +17,6 @@
   :init
   (setq inferior-lisp-program "sbcl")
   (require 'slime-autoloads))
-
-
 
 ;;company icompany
 (use-package company
@@ -46,6 +46,8 @@
 
 ;;markdown
 (setq markdown-command "D:/home/pandoc-3.7.0.2/pandoc.exe")
+
+;;使用M-.进行代码中的定义跳转
 
 (provide 'init-tools)
 
