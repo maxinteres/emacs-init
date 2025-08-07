@@ -21,7 +21,11 @@
 
 (add-hook 'emacs-startup-hook
           (lambda ()
-            (run-with-timer 3 nil (lambda ()
-				    (cd "~/.emacs.d/") 
-				    (find-file "todo/todo.org")))));;开机延迟启动
+            (run-with-timer 1 nil
+			    (lambda ()
+				    (if (not buffer-file-name)
+					(progn
+					  (cd "~/.emacs.d/") 
+					  (find-file "todo/todo.org")))))));;开机延迟启动
+				    
                                   

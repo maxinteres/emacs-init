@@ -34,4 +34,7 @@
   "\(...\)":将括号内的字符视为一个整体，和其他特殊字符配合使用
       e.g."ba\(na\)*"匹配"banana"
 * emacs lisp
+** insert-file-contents和insert-file-contents-literally
+ (不加参数的情况下)都是在当前位置插入整个文件内容，文本文件尽量使用前者或者快捷键“C-x i”唤出insert-file命令.
+ 另外insert-file-contents是primitive-function类型，表示它是用c语言写的；而后者并不是.
 ** interactive

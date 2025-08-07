@@ -1,9 +1,8 @@
 * TODO 学习emacs
-** 学习el中的宏，并优化配置
+** TODO 配置consult
+** TODO 学习el中的宏，并优化配置
 ** TODO 21天学会Emacs 第4-5天
-*** TODO 配置embark-consult
-** DONE 21天学会Emacs 第7天
-** DONE https://abochannek.github.io/emacs/2022/11/30/emacs-backup.html
+** TODO 配置embark-consult
 
 
 * TODO cs61A B C cs70 cs162(操作系统)
