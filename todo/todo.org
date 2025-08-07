@@ -1,5 +1,6 @@
 * TODO 学习emacs
 ** TODO 学习el中的宏，并优化配置
+** TODO 补全当前的README.md
 ** TODO 21天学会Emacs 第4-5天
 
 
@@ -10,6 +11,7 @@
 ** TODO 完成cat项目
 
 * TODO 写完lecture18&19
+
 
 * WAIT [[https://zhuanlan.zhihu.com/p/612921777?share_code=jYMIXiiJ2sfK&utm_psn=1933296217531605750][c++项目]]
 
@@ -39,6 +41,6 @@
 从08
 
 
-* WAIT 看懂agent
+* TODO 看懂agent
 
 * 本周日志：
