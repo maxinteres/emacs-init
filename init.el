@@ -21,7 +21,7 @@
 
 (add-hook 'emacs-startup-hook
           (lambda ()
-            (run-with-timer 1 nil
+            (run-with-timer 10 nil
 			    (lambda ()
 				    (if (not buffer-file-name)
 					(progn
