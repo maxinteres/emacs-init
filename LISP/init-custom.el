@@ -6,7 +6,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(backup-directory-alist nil)
- '(custom-enabled-themes '(modus-operandi-tinted))
+ '(custom-enabled-themes '(modus-operandi-tritanopia))
  '(global-display-line-numbers-mode t)
  '(make-backup-files nil)
  '(org-todo-keyword-faces '(("BUG" . "DeepYellow") ("WAIT" . "brown")))

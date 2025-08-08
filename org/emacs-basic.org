@@ -1,3 +1,9 @@
+* 其他?
+C-x C-w 更改当前buffer对应的文件(buffer内容不变)
+C-x C-r 只读形式打开
+* register.el
+window-configuration-to-register (C-x r w)保存窗口配置到指定寄存器：a-z
+jump-to-register (C-x r j)加载指定寄存器
 * xref.el
 M-. 可以查找光标所在位置的符号定义的位置（不限语言）
 M-, 可以从定义处返回
@@ -13,6 +19,7 @@ M-, 可以从定义处返回
  project-find-regexp (C-x p g)查找项目文件中符合正则表达式的内容
  project-compile (C-x p c)配合makefile使用
  project-list-buffer (C-x p C-b)显示当前项目中打开的buffer
+ project-remember-projects-under 检查一个文件夹，将符合条件的全部视为项目
 * regexp
  这里是emacs中正则表达式的语法：
 
