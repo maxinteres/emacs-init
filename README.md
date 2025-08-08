@@ -1,3 +1,6 @@
+# 如何使用
+下载后直接复制到"~/.emacs.d/"下即可
+
 # requirements 
 ## markdown配置
 到官网下载pandoc，然后到init-tools.el配置markdown-command变量，指向pandoc.exe
@@ -5,12 +8,40 @@
 ## sbcl配置
 去官网下载sbcl并加入环境变量，之后可以使用slime
 
-## g++配置 
+## g++/gcc配置
+去 https://www.msys2.org/ 下载msys2
+打开 MSYS2 MinGW x64
+```bash
+pacman -Syu 
+#更新数据库
+pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb make mingw-w64-x86_64-clang mingw-w64-x86_64-clang-tools-extra
+#下载工具
+```
+下载后设置环境变量，两个：
+```
+\msys64\mingw64\bin
+\msys64\usr\bin
+#自己找对应的位置
+```
+打开cmd，检验是否下载成功
+```bash
+gcc --version
+g++ --version
+clang --version
+#服务器负责补全
+gdb --version
+```
+重启emacs，写一个hello_world.cpp注意会有补全.
+```
+M-x compile ret 
+g++ hello_world.cpp -o hello_world.exe
+```
+即可编译，注意compile默认命令是make，也可以写一个makefile来利用.
 
 ## python配置
 
 ### python
-去官网下载python并加入环境变量，elpy会自动通过环境变量找到python.exe
+去官网下载python并加入环境变量，elpy会自动通过环境变量找到python.exe.
 
 ### pylsp
 和lsp结合，进行补全、查找定义等操作.
