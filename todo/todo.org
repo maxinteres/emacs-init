@@ -1,7 +1,4 @@
 * TODO 学习emacs
-** DONE dired已经配置完毕
-** TODO 补全当前的README.md
-*** TODO 关于如何配置c/c++ python
 ** TODO pyvenv虚拟环境
 ** TODO 学习el中的宏，并优化配置
 
