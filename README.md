@@ -28,6 +28,7 @@ pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb make mingw-w64-x86_64-clang 
 gcc --version
 g++ --version
 clang --version
+clangd --version
 #服务器负责补全
 gdb --version
 ```

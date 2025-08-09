@@ -21,4 +21,15 @@
   (cl-dotimes (- times)
     (newline)))
 
+(defun project-new ()
+  "set current directory as a project."
+  (interactive)
+  (write-region "" nil ".project"))
+
+(defun ask-to-open-todo ()
+  (if (y-or-n-p "open todo-list?")
+      (progn
+	(cd "~/.emacs.d/") 
+	(find-file "todo/todo.org"))))
+
 (provide 'init-funcs)

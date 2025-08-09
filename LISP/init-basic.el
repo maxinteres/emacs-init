@@ -1,4 +1,7 @@
 ;; -*- lexical-binding: t -*-
+(setq use-dialog-box nil)      
+(setq use-short-answers t)     
+
 (global-hl-line-mode 1);;所在行高亮
 
 (setq inhibit-startup-message t)  ; 禁用启动消息
@@ -19,12 +22,9 @@
 
 (setq ring-bell-function 'ignore)
 
-(fset 'yes-or-no-p 'y-or-n-p)
 (icomplete-vertical-mode t);minibuffer提示
 
 (add-hook 'prog-mode-hook 'hs-minor-mode)  ; 对所有编程模式启用
 (add-hook 'hs-minor-mode-hook 'hs-hide-all);初始全部折叠
-
-
 
 (provide 'init-basic)

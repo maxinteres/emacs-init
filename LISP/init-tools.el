@@ -59,6 +59,17 @@
 (setq markdown-command "D:/home/pandoc-3.7.0.2/pandoc.exe")
 
 ;;使用M-.进行代码中的定义跳转
+;;项目文件夹边栏
+(use-package dired-subtree
+  :ensure t
+  :after dired
+  :bind (:map dired-mode-map
+              ("<tab>" . dired-subtree-toggle)))
+
+(use-package dired-sidebar
+  :ensure t
+  :after prog-mode 
+  :bind (("C-d" . dired-sidebar-toggle-sidebar)))
 
 (provide 'init-tools)
 
